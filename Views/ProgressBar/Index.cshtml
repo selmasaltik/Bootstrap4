@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@*Progress Bar*@
+
+
+
+<div class="container">
+    <h2>Index</h2>
+
+    <div class="progress" style="height:30px">
+        @*standart height:16px*@
+        <div class="progress-bar" style="width:50%"></div>
+    </div>
+
+    <br />
+
+    <div class="progress">
+        <div class="progress-bar bg-danger" style="width:30%; height:30px;"></div>
+    </div>
+
+    <br />
+
+    <div class="progress">
+        <div class="progress-bar bg-warning progress-bar-striped" style="width:80%;"></div>
+    </div>
+
+    <br />
+
+    <div class="progress">
+        <div class="progress-bar bg-dark progress-bar-animated progress-bar-striped" style="width:65%;"></div>
+    </div>
+</div>
+
+<hr />
+
+<div class="container">
+    <div class="progress">
+        <div class="progress-bar bg-warning progress-bar-animated progress-bar-striped" style="width:30%;"></div>
+
+        <div class="progress-bar bg-success progress-bar-animated progress-bar-striped" style="width:50%;"></div>
+
+        <div class="progress-bar bg-danger progress-bar-animated progress-bar-striped" style="width:60%;"></div>
+    </div>
+</div>

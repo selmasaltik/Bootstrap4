@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@*Sayfalama*@
+
+
+<div class="container">
+    <h2>Index</h2>
+
+    <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="#">Geri</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item active">
+            @*aktif bulunulan sayfa*@
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item disabled">
+            @*daha fazla ilerlenemez son sayfa*@
+            <a class="page-link" href="#">4</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">İleri</a>
+        </li>
+    </ul>
+
+    <br />
+
+    <ul class="pagination pagination-lg">
+        <li class="page-item">
+            <a class="page-link" href="#">Geri</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item active">
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">İleri</a>
+        </li>
+    </ul>
+
+    <br />
+
+    <ul class="pagination pagination-sm">
+        <li class="page-item">
+            <a class="page-link" href="#">Geri</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item active">
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">İleri</a>
+        </li>
+    </ul>
+
+    <br />
+
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">Yazılım</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#">Bootstrap</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#">Sayfalama</a>
+        </li>
+    </ul>
+
+
+</div>

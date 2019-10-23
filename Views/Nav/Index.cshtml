@@ -1,0 +1,315 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@*Nav*@
+
+
+<div class="container">
+    <h2>Index</h2>
+
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+        </li>
+    </ul>
+
+    <br />
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Link 3</a>
+        </li>
+    </ul>
+
+    <br />
+
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Link 3</a>
+        </li>
+    </ul>
+
+    <br />
+
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Link 3</a>
+        </li>
+    </ul>
+
+    <br />
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+        </li>
+    </ul>
+
+    <br />
+
+    <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+        </li>
+    </ul>
+</div>
+
+<br />
+
+@*Nav-Toggleable*@
+
+<div class="container">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#anasayfa">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="anasayfa" class="container tab-pane active">
+            <h3>Anasayfa</h3>
+            <p>Anasayfa yazıları</p>
+        </div>
+        <div id="menu1" class="container tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Menu 1 yazıları</p>
+        </div>
+        <div id="menu2" class="container tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Menu 2 yazıları</p>
+        </div>
+    </div>
+</div>
+
+@*Navbar - 1*@
+
+@*navbar-expand ile nav-itemler vertical yerine yan yana dizilir*@
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <br />
+
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">Logo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <span class="nav-text">Link 4</span>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-bottom">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">Logo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <span class="nav-text">Text</span>
+            </li>
+        </ul>
+    </nav>
+
+    @*<nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">Logo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <span class="nav-text">Text</span>
+            </li>
+        </ul>
+    </nav>*@
+</div>
+
+<br />
+
+@*Navbar - 2*@
+
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form class="form-inline" action="/" method="post">
+            <div class="input-group">
+                <span class="input-group-text">@@</span>
+                <input type="text" class="form-control" placeholder="Adınız" />
+                <button type="submit" class="btn btn-success">Ara</button>
+            </div>
+        </form>
+    </nav>
+</div>
+
+<br />
+
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <a class="navbar navbar-brand" href="#">Navbar</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at varius justo.
+        Praesent libero velit, lobortis imperdiet lacus sit amet, rutrum interdum magna.
+        In euismod urna mauris, sed pulvinar elit mollis id. Nam dapibus turpis sit amet volutpat euismod.
+        Nunc egestas bibendum efficitur. Pellentesque pharetra id enim nec eleifend.
+        Nunc mauris urna, luctus quis tincidunt sit amet, venenatis et elit.
+        Duis lacinia, mauris eu blandit dignissim, tellus augue volutpat neque,
+        vitae finibus neque nulla hendrerit leo. Class aptent taciti sociosqu ad litora torquent
+        per conubia nostra, per inceptos himenaeos. Cras quis tempus nisi.
+        Nulla sed neque sit amet purus placerat gravida. Cras quis elit eu dui commodo suscipit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nulla sed eros eu ipsum tincidunt semper vel vel libero. Curabitur egestas gravida justo.
+        Aenean ut nisi efficitur, sodales metus quis, consequat mi.
+
+        Fusce condimentum tellus vitae molestie consequat. Aliquam leo massa, maximus sed ultricies ac,
+        semper quis purus. Sed sed aliquet nisi, vitae facilisis nisi. Nunc luctus consectetur aliquet.
+        Integer hendrerit a ante eu gravida. Donec iaculis elementum urna, ut sagittis dolor congue in.
+        Nulla condimentum nisl nisl. Donec ornare nulla nec lorem interdum efficitur.
+        Praesent ultricies feugiat metus rutrum accumsan.
+
+        Proin varius facilisis justo. Quisque eros lorem, laoreet vel lectus malesuada, dictum tristique eros.
+        Suspendisse iaculis bibendum augue, eget dignissim dolor tincidunt ut.
+        Aenean urna nisi, elementum sed libero egestas, aliquam tincidunt lectus.
+        Nunc id tortor urna. Maecenas justo leo, fermentum vitae tincidunt a, vehicula ut eros.
+        Ut pharetra justo vel est varius lacinia. Morbi vehicula congue ipsum,
+        nec interdum velit sollicitudin a. Nulla at placerat velit, quis lacinia magna.
+        Etiam vulputate orci congue porta fringilla. Quisque malesuada bibendum felis, a vulputate erat.
+        Praesent porttitor metus at tristique lobortis. Ut efficitur ultrices dui ut vulputate.
+        Nulla dapibus ornare eleifend.
+        Fusce condimentum tellus vitae molestie consequat. Aliquam leo massa, maximus sed ultricies ac,
+        semper quis purus. Sed sed aliquet nisi, vitae facilisis nisi. Nunc luctus consectetur aliquet.
+        Integer hendrerit a ante eu gravida. Donec iaculis elementum urna, ut sagittis dolor congue in.
+        Nulla condimentum nisl nisl. Donec ornare nulla nec lorem interdum efficitur.
+        Praesent ultricies feugiat metus rutrum accumsan.
+
+        Proin varius facilisis justo. Quisque eros lorem, laoreet vel lectus malesuada, dictum tristique eros.
+        Suspendisse iaculis bibendum augue, eget dignissim dolor tincidunt ut.
+        Aenean urna nisi, elementum sed libero egestas, aliquam tincidunt lectus.
+        Nunc id tortor urna. Maecenas justo leo, fermentum vitae tincidunt a, vehicula ut eros.
+        Ut pharetra justo vel est varius lacinia. Morbi vehicula congue ipsum,
+        nec interdum velit sollicitudin a. Nulla at placerat velit, quis lacinia magna.
+        Etiam vulputate orci congue porta fringilla. Quisque malesuada bibendum felis, a vulputate erat.
+        Praesent porttitor metus at tristique lobortis. Ut efficitur ultrices dui ut vulputate.
+        Nulla dapibus ornare eleifend.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at varius justo.
+        Praesent libero velit, lobortis imperdiet lacus sit amet, rutrum interdum magna.
+        In euismod urna mauris, sed pulvinar elit mollis id. Nam dapibus turpis sit amet volutpat euismod.
+        Nunc egestas bibendum efficitur. Pellentesque pharetra id enim nec eleifend.
+        Nunc mauris urna, luctus quis tincidunt sit amet, venenatis et elit.
+        Duis lacinia, mauris eu blandit dignissim, tellus augue volutpat neque,
+        vitae finibus neque nulla hendrerit leo. Class aptent taciti sociosqu ad litora torquent
+        per conubia nostra, per inceptos himenaeos. Cras quis tempus nisi.
+        Nulla sed neque sit amet purus placerat gravida. Cras quis elit eu dui commodo suscipit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nulla sed eros eu ipsum tincidunt semper vel vel libero. Curabitur egestas gravida justo.
+        Aenean ut nisi efficitur, sodales metus quis, consequat mi.
+
+        Fusce condimentum tellus vitae molestie consequat. Aliquam leo massa, maximus sed ultricies ac,
+        semper quis purus. Sed sed aliquet nisi, vitae facilisis nisi. Nunc luctus consectetur aliquet.
+        Integer hendrerit a ante eu gravida. Donec iaculis elementum urna, ut sagittis dolor congue in.
+        Nulla condimentum nisl nisl. Donec ornare nulla nec lorem interdum efficitur.
+        Praesent ultricies feugiat metus rutrum accumsan.
+    </p>
+</div>
+
+@*class içinde bulunan sticky-top ile sayfa ne kadar aşağı doğru kaydırılsa da yazılar akarken navbar üstte sabit kalacaktır.*@
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+                                                                                  

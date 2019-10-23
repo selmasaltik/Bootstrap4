@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@*Tooltip*@
+
+@*Bootstrap4'te ipuçları üzerine gelince veya tıklayınca ortaya çıkan kısa açıklama yazılarıdır.
+    Nesnenin üzerine gelindiğinde ortaya çıkan ipuçlarına tooltips denir. *@
+
+<div class="container">
+    <h3>Tooltip Örneği</h3>
+
+    <a href="#" data-toggle="tooltip" title="Hahaha">Come on here</a>
+    <br />
+    <br />
+    <a href="#" data-toggle="tooltip" title="i'm here" data-placement="top">Come on here</a>
+    <a href="#" data-toggle="tooltip" title="i'm here" data-placement="right">Come on here</a>
+    <a href="#" data-toggle="tooltip" title="i'm here" data-placement="bottom">Come on here</a>
+    <a href="#" data-toggle="tooltip" title="i'm here" data-placement="left">Come on here</a>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>

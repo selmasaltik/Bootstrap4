@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@*Scrollspy*@
+
+@*ScrollSpy ile kaydırma pozisyonuna göre navigasyon hedefinin otomatik güncellemesi sağlanır.*@
+
+<style>
+    body {
+        position: relative;
+    }
+</style>
+
+
+<body class="container col-md-8" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Bolum 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Bolum 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Bolum 3</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">Bolum 4</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section41">bolum 41</a>
+                    <a class="dropdown-item" href="#section42">bolum 42</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="section1" class="container-fluid bg-success" style="padding-top:150px; padding-bottom:150px;">
+        yazı
+    </div>
+    <div id="section2" class="container-fluid bg-warning" style="padding-top:150px; padding-bottom:150px;">
+        yazı
+    </div>
+    <div id="section3" class="container-fluid bg-primary" style="padding-top:150px; padding-bottom:150px;">
+        yazı
+    </div>
+    <div id="section41" class="container-fluid bg-danger" style="padding-top:150px; padding-bottom:150px;">
+        yazı
+    </div>
+    <div id="section42" class="container-fluid bg-secondary" style="padding-top:150px; padding-bottom:150px;">
+        yazı
+    </div>
+
+</body>
+

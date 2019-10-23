@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@*Popover*@
+
+@*Bootstrap4'te üzerine tıklayarak da ipuçlarını açabiliriz. Bu tip ipuçlarına popover ipuçları denir.*@
+
+<div class="container">
+    <h3>Popover</h3>
+    <a href="#" data-toggle="popover" title="Popover Başlık" data-content="Content ile popover body oluşturulur.">
+        Toogle popover
+    </a> @*üzerine tıklandığında açılır*@
+    <hr />
+    <a href="#" data-toggle="popover" data-trigger="hover" title="Popover Başlık" data-content="Content ile popover body oluşturulur.">
+        Toogle popover
+    </a> @*üzerine gelindiğinde tıklama olmadan açılır*@
+    <hr />
+    <a href="#" data-toggle="popover" data-trigger="focus" title="Popover Başlık" data-content="Content ile popover body oluşturulur.">
+        Toogle popover
+    </a> @*üzerine gelmeden farklı bir yere tıklanarak kapatılabilir*@
+
+    @*yine tooltipte olduğu gibi data-placement ile ipucunun açılma yerini belirleyebiliriz*@
+
+    <hr />
+    <a href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="Popover Başlık" data-content="Content ile popover body oluşturulur.">
+        Toogle popover
+    </a> @*üzerine gelmeden farklı bir yere tıklanarak kapatılabilir*@
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
